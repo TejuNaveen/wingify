@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;;
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4C4C4C;
+}
+.modal {
+    position: fixed;
+    width: 90%;
+    height: auto;
+    background: #FED500;
+    display: flex;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.content {
+    width: 100%;
+    padding: 50px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+span.close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+span.close svg {
+    width: 20px;
+    height: 20px;
+}
+.left-content, .right-content {
+    width: 50%;
+}
+
+.form-container h1 {
+    font-size: 1.6em;
+    padding: 5px 20px;
+}
+.form-container p {
+    padding: 0px 20px 10px;
+    font-size: 1.6em;
+}
+input{
+    border: none;
+    background: #fff;
+    padding: 15px;
+    width: 100%;
+    margin: 10px 0;
+    outline: none;
+    border-radius: 2px; 
+}
+.form-container input[type="submit"] {
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+}
+
+.form-field {
+    width: 100%;
+    display: block;
+}
+
+.form-field input#check {
+    width: auto;
+    vertical-align: middle;
+}
+
+.form-field label {
+    font-size: .8em;
+    line-height: 13px;
+    vertical-align: middle;
+}
+
+.form-container a{
+    font-size: .7em;
+    color: black;
+}
+
+.right-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.openModal {
+    border: none;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+span.error-text {
+    font-size: .8em;
+    color: red;
+}
+@media (max-width: 767px){
+    .right-content {
+        display: none;
+    }
+    .content {  
+        padding: 20px;
+    }
+    .left-content{
+        width: 100%;
+    }
+    h1 {
+        font-size: .9em;
+        padding: 0;
+        margin-top: 15px;
+        text-align: center;
+    }
+    p {
+        padding: 0;
+        font-size: .9em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    span.close svg {
+        width: 12px;
+        height: 12px;
+    }
+    span.close {
+        width: 12px;
+        height: 12px;
+    }
+}

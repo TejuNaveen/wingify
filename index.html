@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <div class="container">
+        <button class="openModal" onclick="openModal()">modal</button>
+        <div class="modal">
+            <div class="content">
+                <span class="close" onclick="closePopup()">
+                    <svg viewPort="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"><line x1="1" y1="12" x2="12" y2="1" stroke="black"  stroke-width="2"/><line x1="1" y1="1" x2="12" y2="12" stroke="black" stroke-width="2"/></svg>
+                </span>
+                <div class="form-container">
+                    <div class="left-content">
+                        <h1>GET $10 OFF WHEN YOU SIGN UP FOR</h1>
+                        <P>SAVINGS, NEWS, UPDATES AND MORE</P>
+                        <form id="loginForm" onsubmit="validation(event)">
+                            <div class="form-field">
+                                <input type="text" class="name" placeholder="your name" name="user">
+                            </div>
+                            <div class="form-field">
+                                <input type="email" class="email" placeholder="email address" name="email">
+                            </div>
+                            <div class="form-field checkbox-field">
+                                <input type="checkbox" class="checkbox" placeholder="your name" id="check" name="checkbox"> 
+                                <label for="check">Check this box to recieve monthly newsletter</label>
+                            </div>
+                            <div class="form-field">
+                                <span class="error-text"></span>
+                            </div>
+                            <div class="form-field">
+                                <input type="submit" value="SIGN UP">
+                            </div>
+                            <div style="text-align:center;">
+                                <a href="#">PRIVACY POLICY</a>
+                            </div>
+                        </form>
+                        
+                    </div>
+                    <div class="right-content">
+                        <img src="./images/big-sale.png" width="300"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
